@@ -11,8 +11,7 @@ import PropTypes from "prop-types";
 
 const imgWithClick = { cursor: "pointer" };
 
-const Photo = ({
-  index,
+const Photo = ({ index,
   onClick,
   photo,
   margin,
@@ -65,7 +64,7 @@ Photo.propTypes = {
       );
     }
   },
-  left: (props) => {
+  left : (props) => {
     if (props.direction === "column" && typeof props.left !== "number") {
       return new Error(
         "left is a required number when direction is set to `column`"
